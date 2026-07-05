@@ -881,29 +881,3 @@ body.nav-open .ip-dot {
   -webkit-mask-image: none;
   mask-image: none;
 }
-
-/* ─── BLACK AI — standalone embed layout ─────────────────── */
-.blackai-embed-wrap {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 2rem 2rem 1rem;
-  z-index: 3;
-  position: relative;
-  pointer-events: auto;
-}
-
-.blackai-video-wrap {
-  width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
-  pointer-events: auto;
-}
-
-.blackai-video-wrap iframe {
-  pointer-events: auto;
-  display: block;
-}
