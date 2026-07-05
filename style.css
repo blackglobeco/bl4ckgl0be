@@ -471,6 +471,20 @@ body {
   color: var(--accent);
 }
 
+.ci-stat-price {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.ci-stat-price s {
+  color: var(--accent);
+  text-decoration: line-through;
+}
+
 /* ── Launch button ── */
 .ci-launch-btn {
   display: inline-flex;
