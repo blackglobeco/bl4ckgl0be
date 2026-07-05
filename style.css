@@ -874,3 +874,10 @@ body.nav-open .ip-dot {
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
 }
+
+/* ─── BLACK AI — pointer-events fix ──────────────────────── */
+#blackai .ci-mockup-wrap {
+  pointer-events: auto;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
