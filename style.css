@@ -857,6 +857,17 @@ body.nav-open .ip-dot {
 
   .ip-widget  { width: 280px; }
   .ipw-ip-val { font-size: 15px; }
+
+  /* ── Black AI mobile ── */
+  .blackai-embed-wrap {
+    width: 100%;
+    padding: 0 var(--gutter) 40px;
+    flex: none;
+  }
+
+  .blackai-video-wrap {
+    width: 100%;
+  }
 }
 
 @media (max-width: 390px) {
