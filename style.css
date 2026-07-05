@@ -857,17 +857,6 @@ body.nav-open .ip-dot {
 
   .ip-widget  { width: 280px; }
   .ipw-ip-val { font-size: 15px; }
-
-  /* ── Black AI mobile ── */
-  .blackai-embed-wrap {
-    width: 100%;
-    padding: 0 var(--gutter) 40px;
-    flex: none;
-  }
-
-  .blackai-video-wrap {
-    width: 100%;
-  }
 }
 
 @media (max-width: 390px) {
@@ -900,19 +889,4 @@ body.nav-open .ip-dot {
 .blackai-video-wrap iframe {
   display: block;
   pointer-events: auto;
-}
-
-/* ─── iOS Safari video autoplay fix ─────────────────────── */
-@supports (-webkit-touch-callout: none) {
-  .ci-mockup-video {
-    -webkit-playsinline: true;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-  }
 }
