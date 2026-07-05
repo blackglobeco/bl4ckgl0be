@@ -865,3 +865,12 @@ body.nav-open .ip-dot {
   .logo-text   { font-size: 18px; }
   .ip-widget   { width: 252px; }
 }
+
+/* ─── BLACK AI — Vimeo embed ──────────────────────────────── */
+.blackai-video-wrap {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
