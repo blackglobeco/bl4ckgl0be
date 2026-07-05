@@ -473,7 +473,7 @@ body {
 
 .ci-stat-price {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   color: var(--white);
   margin: -16px 0 24px 0;
