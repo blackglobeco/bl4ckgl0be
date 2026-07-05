@@ -191,5 +191,41 @@
   </div>
 
   <script src="main.js?v=42"></script>
+
+  <script>
+    // iOS Safari: force video play on any user interaction with the section
+    (function() {
+      var video = document.querySelector('.ci-mockup-video');
+      if (!video) return;
+
+      function tryPlay() {
+        video.play().catch(function() {});
+      }
+
+      // Try autoplay immediately
+      tryPlay();
+
+      // Also trigger on scroll into view (iOS needs user gesture proximity)
+      var section = document.getElementById('cyber-intelligence');
+      if (!section) return;
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            tryPlay();
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.3 });
+
+      observer.observe(section);
+
+      // Also tap anywhere on the section to trigger play
+      section.addEventListener('click', tryPlay, { passive: true });
+      section.addEventListener('touchstart', tryPlay, { passive: true });
+    })();
+  </script>
+
 </body>
 </html>
