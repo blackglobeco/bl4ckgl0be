@@ -472,12 +472,11 @@ body {
 }
 
 .ci-stat-price {
-  display: block;
   font-family: var(--font-mono);
-  font-size: 8px;
-  letter-spacing: 0.1em;
+  font-size: 9px;
+  letter-spacing: 0.12em;
   color: #aaa;
-  margin-top: 5px;
+  margin: -16px 0 24px 0;
 }
 
 .ci-stat-price s {
