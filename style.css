@@ -867,6 +867,17 @@ body.nav-open .ip-dot {
 }
 
 /* ─── BLACK AI — Vimeo embed ──────────────────────────────── */
+.blackai-embed-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem 2rem 1rem;
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+}
+
 .blackai-video-wrap {
   width: 100%;
   border-radius: 8px;
@@ -875,9 +886,7 @@ body.nav-open .ip-dot {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
 }
 
-/* ─── BLACK AI — pointer-events fix ──────────────────────── */
-#blackai .ci-mockup-wrap {
+.blackai-video-wrap iframe {
+  display: block;
   pointer-events: auto;
-  -webkit-mask-image: none;
-  mask-image: none;
 }
