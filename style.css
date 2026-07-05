@@ -901,3 +901,18 @@ body.nav-open .ip-dot {
   display: block;
   pointer-events: auto;
 }
+
+/* ─── iOS Safari video autoplay fix ─────────────────────── */
+@supports (-webkit-touch-callout: none) {
+  .ci-mockup-video {
+    -webkit-playsinline: true;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}
